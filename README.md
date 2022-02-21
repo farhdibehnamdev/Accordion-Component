@@ -1,6 +1,6 @@
 # Accordion Component
 
-The [Accordion Component](https://farhdibehnamdev.github.io/Four-Card-Feature-Section/) is designed to practice and explore basic HTML , CSS and Javascript.
+The [Accordion Component](https://farhdibehnamdev.github.io/Accordion-Component/) is designed to practice and explore basic HTML , CSS and Javascript.
 
 The template is a guide meant for you to explore and change to ✨*make it your own*✨
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Accordion Component](https://farhdibehnamdev.github.io/Four-Card-Feature-Section/)
+- Live Site URL: [Accordion Component](https://farhdibehnamdev.github.io/Accordion-Component/)
 
 ## My process
 
