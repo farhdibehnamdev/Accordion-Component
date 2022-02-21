@@ -6,16 +6,12 @@
   box-sizing: border-box;
 }
 body {
-  position: relative;
   background-color: #e9ecef;
   font-family: "Roboto", sans-serif;
+  line-height: 1;
 }
 .container {
-  margin-top: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 100px auto;
   width: 780px;
 }
 .container h1 {
@@ -74,7 +70,10 @@ h2 {
 .description ul {
   margin-bottom: 20px;
   color: #5c5f62;
-  line-height: 1.7;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .deactive {
   display: none;
@@ -85,10 +84,7 @@ h2 {
   display: flex;
 }
 
-.active h2 {
-  color: #137645;
-}
-
+.active h2,
 .active span {
   color: #137645;
 }
