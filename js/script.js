@@ -13,9 +13,6 @@ function resetElementStyle(currentElement) {
   if (activeClassElement !== null) {
     if (activeClassElement.classList[1] !== currentElelmentWithoutDot) {
       activeClassElement.classList.toggle("active");
-      let descriptionElement = activeClassElement.nextElementSibling;
-      descriptionElement.classList.toggle("deactive");
-
       let currentCaretElement = activeClassElement.querySelector(".caret-left");
       currentCaretElement.classList.remove("ph-caret-down");
       currentCaretElement.classList.add("ph-caret-left");
@@ -38,9 +35,6 @@ function openDescription(currentElement) {
 
   let selectedElement = document.querySelector(currentElement);
   selectedElement.classList.toggle("active");
-
-  let descriptionElement = selectedElement.nextElementSibling;
-  descriptionElement.classList.toggle("deactive");
 
   if (selectedElement.classList.contains("active")) {
     currentCaretElement.classList.remove("ph-caret-left");
