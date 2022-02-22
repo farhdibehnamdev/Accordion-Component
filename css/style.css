@@ -13,6 +13,9 @@ body {
 .container {
   margin: 100px auto;
   width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .container h1 {
   text-align: center;
@@ -21,33 +24,36 @@ body {
   font-weight: bold;
   color: #1c7ed6;
 }
+
 .faq {
   background-color: #fff;
   padding: 25px;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
   align-items: center;
-  margin-bottom: 15px;
-}
-.caret-left {
-  width: 32px;
-  height: auto;
-  stroke: #137645;
-}
-.caret-left-01 {
-  margin-left: 135px;
 }
 
-.caret-left-02 {
-  margin-left: 100px;
+.hidden-description {
+  grid-column: 2;
+  display: none;
 }
-.caret-left-03 {
-  margin-left: 79px;
+
+.hidden-description p {
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
+.hidden-description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 20px;
+}
+
 span {
   font-size: 24px;
   color: #c2c7c7;
-  margin-right: 18px;
   font-weight: bold;
 }
 h2 {
@@ -55,35 +61,12 @@ h2 {
   color: #495057;
 }
 
-.description {
-  padding: 7px 80px;
-  line-height: 1.7;
-  background-color: #fff;
-  margin-bottom: 20px;
-  margin-top: -15px;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
-}
-.description p {
-  margin-bottom: 20px;
-}
-
-.description ul {
-  margin-bottom: 20px;
-  color: #5c5f62;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.deactive {
-  display: none;
-}
-
 .active {
   border-top: 4px #137645 solid;
-  display: flex;
 }
-
+.active .hidden-description {
+  display: block;
+}
 .active h2,
 .active span {
   color: #137645;
